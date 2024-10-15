@@ -1,0 +1,100 @@
+\documentclass[compress, aspectratio=169, table, dvipsnames]{beamer}
+\usepackage{tabularx}
+\usepackage[german]{babel}
+\usepackage{metalogo}
+\usepackage{listings}
+\usepackage{fontspec}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{wrapfig}
+\usepackage{lmodern}
+\usepackage[font=scriptsize]{caption}
+\usepackage{dirtytalk}
+\usepackage{xurl}
+
+\graphicspath{{./images/}}
+%\usetheme{Nord}
+\usetheme{Nord}
+
+\captionsetup{font=footnotesize}
+\renewcommand{\footnotesize}{\tiny}
+\urlstyle{same}
+\newcommand\ftn[1]{%
+	\let\thefootnote\relax%
+	\footnotetext{#1}%
+	\let\thefootnote\svthefootnote%
+}
+\definecolor{stxtred}{RGB}{201, 9, 0}
+
+\setmainfont{Hack NF}
+\setsansfont{Hack NF}
+\setmonofont{Hack NF}
+
+%\AtBeginSection[]
+%{	
+%	\begingroup
+%	\setbeamertemplate{headline}{\vskip1cm}
+%	\setbeamertemplate{footline}{}
+%	\begin{frame}[c,noframenumbering]
+%		\frametitle{Inhalt}
+%		\centering
+%		\begin{minipage}[h]{1.0\linewidth}
+%			\begin{block}{}
+%				\tableofcontents[sectionstyle=show/hide,subsectionstyle=show/show/hide,subsubsectionstyle=show/show/hide]
+%			\end{block}
+%		\end{minipage}%
+%	\end{frame}
+%	\endgroup
+%}
+
+\title{Buchungsprozess für mobilitätseingeschränkte Personen}
+\subtitle{Zwischenpräsentation}
+\author{Sven Hugi \and Rejo Valiaparampil}
+\institute{University of Applied Sciences and Arts Nordwest Schweiz}
+\date{\today}
+
+
+\begin{document}
+	\begin{frame}[plain,noframenumbering]
+		\maketitle
+	\end{frame}
+	\begingroup
+	\setbeamertemplate{headline}{\vskip1cm}
+	\setbeamertemplate{footline}{}
+	\begin{frame}[c,noframenumbering]{Inhalt}
+		\centering
+		\begin{minipage}[h]{1.0\linewidth}
+			\begin{block}{}
+				\tableofcontents[sectionstyle=show,subsectionstyle=hide,subsubsectionstyle=hide]
+			\end{block}
+		\end{minipage}%
+	\end{frame}
+	\endgroup
+	\section{Projektbeschreibung}
+	\subsection{Ausgangslage}
+	\begin{frame}{Ausgangslage}
+		\hspace{.0425\linewidth}
+		\begin{minipage}[h]{.525\linewidth}
+			\begin{block}{HbbTV IKON}
+				\begin{itemize}[<+->]
+					\item Teletext Nachfolge
+					\item Microservice mit .NET Core
+					\item Kubernetes
+				\end{itemize}
+			\end{block}
+		\end{minipage}\hspace{.055\linewidth}
+		\begin{minipage}[h]{.375\linewidth}
+			\begin{figure}[c]
+				image
+			\end{figure}
+		\end{minipage}%
+		\ftn{Bild: \url{https://debating404.com/wp-content/uploads/2017/01/ag_infrastructure.jpg}}
+	\end{frame}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:

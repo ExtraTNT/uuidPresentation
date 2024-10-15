@@ -1,0 +1,3 @@
+\babel@toc {german}{}\relax 
+\beamer@sectionintoc {1}{Projektbeschreibung}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Ausgangslage}{3}{0}{1}
